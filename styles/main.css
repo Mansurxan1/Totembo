@@ -1,0 +1,457 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: Montserrat-Regular;
+}
+
+.percentage{
+    font-size: 22px;
+    line-height: 26.82px;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+    padding: 11px 39px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    /* z-index: 99; */
+}
+
+.container{
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #323232;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    margin-right: 20px;
+}
+
+.logo{
+    font-family: Montserrat-Bold;
+    font-size: 32px;
+    line-height: 23px;
+    color: #323232;
+    margin-right: 20px;
+}
+
+.nav__link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+
+.nav__content-menu{
+    display: none;
+}
+
+.nav__icon-drapdown{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.nav__icon{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.nav__icon svg:hover{
+    transform: scale(1.2);
+}
+
+.nav__languages{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav__languages>li:hover .nav__icon-drapdown{
+    display: block;
+    z-index: 5;
+}
+
+.nav__icon-drapdown>li{
+    display: block;
+}
+
+.nav__drapdown-lang{
+    padding: 10px;
+    display: block;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.nav__languages> li{
+    position: relative;
+}
+
+.nav__language{
+    color: #000;
+    height: 18px;
+    width: 20px;
+}
+
+.header{
+    margin-top: 2.5rem;
+}
+
+.header__content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 30px;
+}
+
+.header__content-item{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 6px 6px 15px 0px rgba(132, 132, 132, 0.3);
+    background: rgba(225, 225, 225, 1);
+    align-items: center;
+    position: relative;   
+    cursor: pointer;
+}
+
+.header__content-item:nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 526px;
+}
+.header__content-item:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.header__content-item:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.header__content-img{
+    text-align: center;
+    padding: 53px 0 27px;
+    transition: 1.5s;
+}
+
+.header__content-img:hover{
+    transform: scale(1.2);
+}
+
+.header__content-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.header__content-garden{
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.header__content-title{
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.header__content-diadema{
+    font-family: Montserrat-Bold;
+}
+
+.header__content-price{
+    font-size: 16px;
+    line-height: 18.79px;
+}
+
+.product{
+    margin: 60px auto;
+}
+
+.product__title{
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #323232;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 36.57px;
+    letter-spacing: 2px;
+}
+
+.product__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+}
+
+.product__item{
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 6px 6px 15px 0px rgba(132, 132, 132, 0.3);
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__news{
+    font-size: 20px;
+    line-height: 24.38px;
+    background: #000;
+    color: #fff;
+    padding: 11px 39px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.product__content-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 72px 0 30px;
+}
+
+.product__item-img{
+    transition: 2s;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 243px;
+}
+
+.product__item-img:hover{
+    transform: scale(1.2);
+}
+
+.product-img{
+    margin: 40px auto 30px;
+}
+
+.product__item-garden{
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.product__name{
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    line-height: 24.38px;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+.product__price{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.product__content-icon{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.product__icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    row-gap: 10px;
+}
+
+.product__icon-btn{
+    padding: 16px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.product__icon-btn svg {
+    transition: 0.5s;
+}
+
+.product__icon-btn svg:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+.product__continue{
+    font-size: 30px;
+    line-height: 36.57px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.news__title{
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36.57px;
+    letter-spacing: 2.200000047683716px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+
+.news__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 40px auto 60px;
+    color: #e1e1e1;
+    overflow: hidden;
+}
+
+.news__content-advice{
+    background: url(../images/news1.png)no-repeat center/cover;    
+}
+
+.news__content-mechanic{
+    background: url(../images/news2.png)no-repeat center/cover;
+}
+
+.news__content-advice,
+.news__content-mechanic{
+    position: relative;
+    border-radius: 10px;
+    padding: 110px 20px 60px;
+}
+
+.news__content-advice>.percentage,
+.news__content-mechanic>.percentage{
+    text-transform: uppercase;
+    padding: 13px 30px;
+    background: #fff;
+    color: #000;
+}
+
+.news__content-title{
+    font-family: Montserrat-Bold;
+    font-size: 22px;
+    line-height: 26.82px;
+    color: #fff;
+}
+
+.news__content-text{
+    margin: 30px 0 110px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.news__content-clock{
+    display: flex;
+    column-gap: 10px;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+br{
+    display: none;
+}
+
+.footer{
+    background: #323232;
+    padding: 100px 0 87px;
+    color: #fff;
+}
+
+.footer>.container{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1.5fr;
+    column-gap: 180px;
+}
+
+.footer__service{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link{
+    padding-bottom: 15px;
+}
+
+.footer__link-name{
+    color: #fff;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+.service__title{
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 23px;
+}
+
+.footer__title{
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 26.82px;
+    letter-spacing: 2.200000047683716px;
+}
+
+.footer__contact{
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+.contact__tel,
+.contact__gmail,
+.contact__address{
+    color: #fff;
+}
+
+.contact__phone,
+.contact__map,
+.contact__gmail{
+    padding-bottom: 15px;
+}
+
+.contact__text{
+    margin: 60px auto 40px;
+}
+
+.contact__messengers{
+    display: flex;
+    gap: 30px;
+}
