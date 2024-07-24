@@ -165,7 +165,7 @@ body{
 
 .header__content-img{
     text-align: center;
-    padding: 53px 0 27px;
+    margin: 53px 0 27px;
     transition: 1.5s;
 }
 
@@ -261,10 +261,6 @@ body{
 
 .product__item-img:hover{
     transform: scale(1.2);
-}
-
-.product-img{
-    margin: 40px auto 30px;
 }
 
 .product__item-garden{

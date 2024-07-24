@@ -29,7 +29,7 @@
     }
 
     .header__content-img{
-        padding: 30px 0 15px;
+        margin: 30px 0 15px;
     }
 
     .news__content-advice,
@@ -115,8 +115,12 @@
 }
 
 @media(max-width:700px){
-    .nav__content{
+    .nav__list{
         margin-left: 20px;
+    }
+
+    .header__item-img{
+        width: 250px;
     }
 
     .product__content{
@@ -139,6 +143,7 @@
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 30px 0 13px;
     }
 
     .nav__list{
@@ -187,9 +192,41 @@
         margin-right: 25px;
     }
 
+    .percentage{
+        font-size: 18px;
+        padding: 9px 25px;
+    }
+
+    .header__content-img{
+        margin-top: 20px;
+    }
+
+    .product__content-items{
+        margin: 30px 0 15px;
+    }
+
+    .product__item-img{
+        width: 180px;
+        height: auto;
+    }
+
     .product__title,
     .news__title{
-        font-size: 27px;
+        font-size: 20px;
+    }
+
+    .product__name{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .product__icon-btn{
+        padding: 10px;
+    }
+
+    .product__icon-btn svg {
+        width: 17px;
+        height: 15px;
     }
 
     .news__content-text{
